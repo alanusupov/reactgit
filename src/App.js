@@ -1,6 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import Input from "./components/Input";
+import AinraBtn from "./components/AinuraBtn/AinraBtn";
 
 function App() {
   const [input, setInput] = useState("");
@@ -14,6 +15,7 @@ function App() {
       Input
       <Input handleChange={handleChange} setInput={setInput} />
       <div>{input}</div>
+      <AinraBtn/>
     </div>
   );
 }
