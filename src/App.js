@@ -2,6 +2,8 @@ import "./App.css";
 import { useState } from "react";
 import Input from "./components/Input";
 import ArafatInp from "./components/ArafatBtn/ArafatInp";
+import Talgat from "./components/Talgat/Talgat";
+import MyBtn from "./components/MyBtn";
 
 function App() {
   const [input, setInput] = useState("");
@@ -16,6 +18,8 @@ function App() {
       <Input handleChange={handleChange} setInput={setInput} />
       <div>{input}</div>
       <ArafatInp />
+      <Talgat/>
+      <MyBtn />
     </div>
   );
 }
